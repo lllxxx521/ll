@@ -8,6 +8,12 @@ public class XdlBankAccount implements Serializable{
 	 * 
 	 */
 	private static final long serialVersionUID = 1L;
+	
+	public XdlBankAccount(String acc_no, String acc_password) {
+		super();
+		this.acc_no = acc_no;
+		this.acc_password = acc_password;
+	}
 	@Override
 	public String toString() {
 		return "XdlBankAccount [id=" + id + ", acc_no=" + acc_no + ", acc_password=" + acc_password + ", acc_money="
@@ -37,8 +43,10 @@ public class XdlBankAccount implements Serializable{
 	public void setAcc_money(String acc_money) {
 		this.acc_money = acc_money;
 	}
+	
 	private  int   id;
     private  String acc_no;
     private  String acc_password;
     private  String acc_money;
+    
 }
